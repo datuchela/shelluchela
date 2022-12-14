@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./app.js"></script>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(0, 0%, 10%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      main {
+        background-color: hsl(0, 0%, 20%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        border-top: 2px solid hsl(0, 0%, 18%);
+      }
+      input {
+        color: white;
+        background-color: hsl(0, 0%, 20%);
+        padding: 0.5rem;
+        flex: 1;
+        border: none;
+        outline: none;
+      }
+      button {
+        color: white;
+        background-color: hsl(0, 0%, 20%);
+        padding: 0.5rem 0.5rem;
+        border: none;
+        cursor: pointer;
+      }
+      .terminal-wrapper {
+        padding: 1.5rem;
+        width: 500px;
+        height: 400px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .terminal-line {
+        color: white;
+      }
+      .command-line {
+        color: hsl(0, 100%, 64%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="terminal-wrapper">
+        <div class="console"></div>
+      </div>
+      <form>
+        <input type="text" placeholder="type your command here" />
+        <button>Send</button>
+      </form>
+    </main>
+  </body>
+</html>
