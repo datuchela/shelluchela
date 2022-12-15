@@ -22,7 +22,7 @@ const CommandPrompt = () => {
   }
 
   return (
-    <form className="flex items-center gap-2 flex-1" onSubmit={handleSubmit}>
+    <form className="sticky bottom-0 left-0 p-4 flex items-center gap-2" onSubmit={handleSubmit}>
       <input
         className="input input-ghost input-sm flex-1"
         type="text"
